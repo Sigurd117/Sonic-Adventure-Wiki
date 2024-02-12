@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog post</title>
+    <style>
+        body {
+            font-family: Broadway, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+        header {
+            background-color: deepskyblue;
+            color: mediumblue;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: darkblue;
+            color: powderblue;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 1em;
+        }
+
+        article {
+            flex: 0;
+            background-color: lightblue;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: burlywood;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: gold;
+            color: red;
+            padding: 1em;
+            text-align: center;
+        }
+
+        details {
+            margin-top: 1em;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 0.5em;
+            background-color: chartreuse;
+            color: navy;
+            border: none;
+            border-radius: 4px;
+        }
+
+        details[open] summary {
+            background-color: oldlace;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        .Container {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Blog</h1>
+    <p>Sonic Adventure Blog Post.</p>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Catergories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article>
+        <header>
+            <h2>Sonic Adventure is video game made on the Dreamcast by SEGA.</h2>
+            <p class="meta">Published on January 31, 2024 by Giovanni Lara</p>
+        </header>
+
+        <figure>
+            <img src="images/sonic.jpg" alt="Sonic Adventure">
+            <figcaption>Sonic Adventure is a 3D-platformer released for the Sega Dreamcast on December 23, 1998JP.</figcaption>
+        </figure>
+
+        <section>
+            <p>This is Sonic's first true transition into 3D as a platformer. It was one of SEGA's sixteen launch titles for the console, and SEGA wanted to provide the player with the same thrill of speed Sonic was founded on.</p>
+
+            <details>
+                <summary>Comments</summary>
+                <p>SonicLover14: Great post!</p>
+                <p>ChaosControl$: This game is amazing!</p>
+            </details>
+        </section>
+    </article>
+
+    <aside>
+        <section>
+            <h3>Sonic Adventure Opening Cinematic</h3>
+            <div class="Container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zTonLUzwkX8?si=Qx0YTrr-gotJorZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h3>Popular Posts</h3>
+            <ul>
+                <li><a href="#post1">Top 10 Sonic levels</a></li>
+                <li><a href="#post2">Why is Big the Cat a character?</a></li>
+                <li><a href="post3">Sonic Advenure DX a good port?</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Tags</h3>
+            <ul>
+                <li><a href="#Gameplay">Gameplay</a></li>
+                <li><a href="image gallery">Image Gallery</a></li>
+                <li><a href="Characters">Characters</a></li>
+            </ul>
+        </section>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sonic Adventure Blog. All rights reserved.</p>
+</footer>
+</body>
+</html>
